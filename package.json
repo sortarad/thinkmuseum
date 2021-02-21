@@ -1,0 +1,40 @@
+{
+    "private": true,
+    "scripts": {
+        "dev": "npm run development",
+        "build": "gulp build --env production",
+        "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "watch": "npm run development -- --watch",
+        "watch-poll": "npm run watch -- --watch-poll",
+        "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "prod": "npm run production",
+        "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+    },
+    "devDependencies": {
+        "autoprefixer": "^9.7.6",
+        "browser-sync": "^2.26.14",
+        "cross-env": "^5.1",
+        "cssnano": "^4.1.10",
+        "del": "^6.0.0",
+        "fibers": "^5.0.0",
+        "gulp": "^4.0.2",
+        "gulp-cache": "^1.1.3",
+        "gulp-if": "^3.0.0",
+        "gulp-imagemin": "^7.1.0",
+        "gulp-notify": "^3.2.0",
+        "gulp-plumber": "^1.2.1",
+        "gulp-postcss": "^9.0.0",
+        "gulp-sass": "^4.1.0",
+        "gulp-sourcemaps": "^3.0.0",
+        "kroket": "0.0.13",
+        "laravel-mix": "^4.0",
+        "minimist": "^1.2.5",
+        "postcss-import": "^12.0.1",
+        "postcss-nested": "^4.2.1",
+        "postcss-preset-env": "^6.7.0",
+        "sass": "^1.32.8",
+        "tailwindcss": "^1.8.0",
+        "vue-template-compiler": "^2.6.12"
+    },
+    "dependencies": {}
+}

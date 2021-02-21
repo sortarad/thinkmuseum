@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="{{ site:short_locale }}">
+    <head>
+        <title>Think Museum</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>{{ title ?? site:name }}</title>
+        <link rel="stylesheet" href="files/css/style.css">
+    </head>
+    <body>
+        <div class="site-header">
+            <div class="wrapper">
+                <div class="site-header__inner">
+                    <img class="site-header__logo" src="files/img/logo.svg" alt="Think Museum">
+                    <nav class="site-header__nav">
+                        {{ nav:main include_home="true" }}
+                        <a class="site-header__link {{ if is_current || is_parent }} class="site-header__link--active" {{ /if }} href="{{ url }}">{{ title }}</a>
+                        {{ /nav:main }}
+                    </nav>
+                </div>
+            </div>
+        </div>
+        {{ template_content }}
+    </body>
+</html>

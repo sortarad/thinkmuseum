@@ -1,0 +1,19 @@
+@mixin flow-space($flow-space) {
+    $space: map-get(map-get(map-get($kroket-config, 'items'), 'size'), $flow-space);
+
+    --flow-space: #{if($space, #{$space}, #{unquote($flow-space)})};
+}
+
+@mixin flow($flow-space: false) {
+    > * + * {
+        @if $flow-space {
+            @include flow-space($flow-space);
+        }
+
+        margin-top: var(--flow-space, get-size('600'));
+    }
+}
+
+.flow {
+    @include flow;
+}

@@ -1,0 +1,16 @@
+@mixin wrapper {
+    @include apply-utility('measure', 'long');
+
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: get-size('500');
+    padding-right: get-size('500');
+}
+
+.wrapper {
+    @include wrapper;
+}
+
+.wrapper--short {
+    @include apply-utility('measure', 'short');
+}

@@ -1,0 +1,31 @@
+.hero {
+    position: relative;
+    padding-bottom: get-size('500');
+    margin-bottom: get-size('500');
+    background-color: get-color('dark-tint');
+
+    @include media-query('sm') {
+        padding-bottom: get-size('700');
+        margin-bottom: get-size('700');
+    }
+
+    @include media-query('md') {
+        padding-bottom: get-size('800');
+        margin-bottom: get-size('800');
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 20vw;
+        height: get-size('400');
+        background-color: get-color('primary');
+        transform: translateY(50%);
+    }
+}
+
+.hero__title {
+    max-width: 500px;
+}

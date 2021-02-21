@@ -1,0 +1,18 @@
+@mixin breakout($width) {
+    $items: map-get(map-get(map-get($kroket-config, 'utilities'), 'measure'), 'items');
+    $item-value: map-get($items, $width);
+    $breakout-width: if($item-value, #{$item-value}, #{unquote($width)});
+
+    @if ($width == 'full') {
+        width: 100vw;
+        margin-left: calc(50% - 50vw);
+    } @else {
+        width: calc(100vw - #{get-size('500') * 2});
+        margin-left: calc(50% - 50vw + #{get-size('500')});
+
+        @media screen and (min-width: $breakout-width) {
+            width: calc(#{$breakout-width} - #{get-size('500') * 2});
+            margin-left: calc(50% - ((#{$breakout-width} - #{get-size('500') * 2})) / 2);
+        }
+    }
+}

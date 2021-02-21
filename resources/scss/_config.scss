@@ -1,0 +1,235 @@
+$kroket-config: (
+  "items": (
+    "color": (
+      "white": #fff,
+      "primary": #dd2700,
+      "dark": #1e1f21,
+      "dark-tint": #2c2d2f,
+    ),
+    "size": (
+      "100": 0.63rem,
+      "200": 0.8400000000000001rem,
+      "300": 1.125rem,
+      "400": 1.5rem,
+      "500": 1.995rem,
+      "600": 2.6550000000000002rem,
+      "700": 3.54rem,
+      "800": 4.725rem,
+      "900": 6.300000000000001rem,
+      "1000": 8.399999999999999rem,
+    ),
+  ),
+  "breakpoints": (
+    "sm": "(min-width: 32em)",
+    "md": "(min-width: 48em)",
+    "lg": "(min-width: 68em)",
+  ),
+  "utilities": (
+    "bg": (
+      "items": (
+        "white": #fff,
+        "primary": #dd2700,
+        "dark": #1e1f21,
+        "dark-tint": #2c2d2f,
+      ),
+      "property": "background",
+    ),
+    "color": (
+      "items": (
+        "white": #fff,
+        "primary": #dd2700,
+        "dark": #1e1f21,
+        "dark-tint": #2c2d2f,
+      ),
+      "property": "color",
+    ),
+    "flow-space": (
+      "items": (
+        "100": 0.63rem,
+        "200": 0.8400000000000001rem,
+        "300": 1.125rem,
+        "400": 1.5rem,
+        "500": 1.995rem,
+        "600": 2.6550000000000002rem,
+        "700": 3.54rem,
+        "800": 4.725rem,
+        "900": 6.300000000000001rem,
+        "1000": 8.399999999999999rem,
+      ),
+      "property": "--flow-space",
+    ),
+    "z": (
+      "items": (
+        "default": 0,
+        "overlay": 1,
+      ),
+      "property": "z-index",
+    ),
+    "font": (
+      "items": (
+        "base":
+          '"IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
+        "heading":
+          '"Berthold City", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
+        "mono":
+          '"Pica", Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace',
+      ),
+      "property": "font-family",
+    ),
+    "shadow": (
+      "items": (
+        "base":
+          "0 0.3px 0.2px rgba(0, 0, 0, 0.025), 0 0.8px 0.5px rgba(0, 0, 0, 0.03), 0 1.5px 0.9px rgba(0, 0, 0, 0.033), 0 2.7px 1.6px rgba(0, 0, 0, 0.036), 0 5px 2.9px rgba(0, 0, 0, 0.039), 0 12px 7px rgba(0, 0, 0, 0.05)",
+        "heavy":
+          "0 0.7px 0.3px rgba(0, 0, 0, 0.025), 0 1.7px 0.7px rgba(0, 0, 0, 0.03), 0 3.1px 1.4px rgba(0, 0, 0, 0.033), 0 5.6px 2.5px rgba(0, 0, 0, 0.036), 0 10.4px 4.6px rgba(0, 0, 0, 0.039), 0 25px 11px rgba(0, 0, 0, 0.05)",
+      ),
+      "property": "box-shadow",
+    ),
+    "radius": (
+      "items": (
+        "normal": 5px,
+        "large": 10px,
+      ),
+      "property": "border-radius",
+    ),
+    "gap-top": (
+      "items": (
+        "100": 0.63rem,
+        "200": 0.8400000000000001rem,
+        "300": 1.125rem,
+        "400": 1.5rem,
+        "500": 1.995rem,
+        "600": 2.6550000000000002rem,
+        "700": 3.54rem,
+        "800": 4.725rem,
+        "900": 6.300000000000001rem,
+        "1000": 8.399999999999999rem,
+      ),
+      "property": "margin-top",
+    ),
+    "gap-bottom": (
+      "items": (
+        "100": 0.63rem,
+        "200": 0.8400000000000001rem,
+        "300": 1.125rem,
+        "400": 1.5rem,
+        "500": 1.995rem,
+        "600": 2.6550000000000002rem,
+        "700": 3.54rem,
+        "800": 4.725rem,
+        "900": 6.300000000000001rem,
+        "1000": 8.399999999999999rem,
+      ),
+      "property": "margin-bottom",
+    ),
+    "border-top": (
+      "items": (
+        "shade": "3px solid rgba(0, 0, 0, 0.1)",
+        "shade-dashed": "3px dashed rgba(0, 0, 0, 0.1)",
+      ),
+      "property": "border-top",
+    ),
+    "leading": (
+      "items": (
+        "flat": 1.1,
+        "mid": 1.5,
+        "loose": 1.7,
+      ),
+      "property": "line-height",
+    ),
+    "measure": (
+      "items": (
+        "long": 80ch,
+        "short": 50ch,
+        "compact": 30ch,
+      ),
+      "property": "max-width",
+    ),
+    "text": (
+      "items": (
+        "100": 0.63rem,
+        "200": 0.8400000000000001rem,
+        "300": 1.125rem,
+        "400": 1.5rem,
+        "500": 1.995rem,
+        "600": 2.6550000000000002rem,
+        "700": 3.54rem,
+        "800": 4.725rem,
+        "900": 6.300000000000001rem,
+        "1000": 8.399999999999999rem,
+      ),
+      "property": "font-size",
+    ),
+    "weight": (
+      "items": (
+        "normal": 400,
+        "bold": 700,
+      ),
+      "property": "font-weight",
+    ),
+  ),
+);
+
+@function get-item($group, $key) {
+  $response: map-get(map-get(map-get($kroket-config, "items"), $group), $key);
+
+  @if ($response) {
+    @return $response;
+  }
+
+  @warn #{'Item "' + $key + '" not found in "' + $group + '".'};
+
+  @return null;
+}
+
+@function get-color($key) {
+  @return get-item("color", $key);
+}
+
+@function get-size($key) {
+  @return get-item("size", $key);
+}
+
+@function get-utility($group, $key) {
+  $utility: map-get(map-get($kroket-config, "utilities"), $group);
+  $items: map-get($utility, "items");
+  $item-value: map-get($items, $key);
+
+  @if ($item-value) {
+    @return $item-value;
+  } @else {
+    @warn #{'Value: ‘' + $key + '’ doesn’t exist in ‘' + $group + '’' };
+  }
+}
+
+@mixin apply-utility($group, $key) {
+  $utility: map-get(map-get($kroket-config, "utilities"), $group);
+  $property: map-get($utility, "property");
+  $items: map-get($utility, "items");
+  $item-value: map-get($items, $key);
+
+  @if ($property and $item-value) {
+    #{ $property }: #{$item-value};
+  } @else {
+    @if ($property) {
+      @warn #{'Value: ‘' + $key + '’ doesn’t exist in ‘' + $group + '’' };
+    }
+
+    @if ($item-value) {
+      @warn #{ 'Utility ‘' + $key + '’ doesn’t exist' };
+    }
+  }
+}
+
+@mixin media-query($key) {
+  $breakpoints: map-get($kroket-config, "breakpoints");
+  $matched-breakpoint: map-get($breakpoints, $key);
+
+  @if not $matched-breakpoint {
+    @warn #{ 'Breakpoint, ‘' + $key + '’ not found in `$kroket-config`. Make sure it’s set in the ‘breakpoints’ section of your Kroket config file.' };
+  } @else {
+    @media #{ $matched-breakpoint } {
+      @content;
+    }
+  }
+}
