@@ -14,8 +14,8 @@
                 <div class="site-header__inner">
                     <img class="site-header__logo" src="files/img/logo.svg" alt="Think Museum">
                     <nav class="site-header__nav">
-                        {{ nav:main include_home="true" }}
-                        <a class="site-header__link {{ if is_current || is_parent }} class="site-header__link--active" {{ /if }} href="{{ url }}">{{ title }}</a>
+                        {{ nav:main }}
+                        <a class="site-header__link {{ if is_current || is_parent }} site-header__link--active {{ /if }}" href="{{url}}">{{ title }}</a>
                         {{ /nav:main }}
                     </nav>
                 </div>
