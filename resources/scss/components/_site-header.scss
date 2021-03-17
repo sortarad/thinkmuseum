@@ -36,8 +36,11 @@
 
 .site-header__link {
     color: rgba(get-color('white'), 0.5);
-    transition: color 0.3s ease-in-out;
     margin-right: get-size('200');
+    
+    &:hover {
+        transition: color 0.3s ease-in-out;
+    }
 
     @include media-query('sm') {
         margin-right: 0;
